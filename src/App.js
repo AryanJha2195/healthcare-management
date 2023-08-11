@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Navbarr from "./component/Navbarr.jsx";
+import PostNavbar from "./component/PostNavbar.jsx";
+import HeroSection from "./component/HeroSection.jsx";
+import Cards from "./component/Cards.jsx";
+import FormSection from "./component/FormSection.jsx";
+import Footter from "./component/Footter.jsx";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbarr/>
+      <PostNavbar/>
+      <HeroSection/>
+      <Cards/>
+      <FormSection/>
+      <Footter/>
     </div>
   );
 }
